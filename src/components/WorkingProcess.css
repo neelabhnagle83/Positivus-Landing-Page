@@ -1,0 +1,87 @@
+#wp-container {
+    padding-top: 72px;
+}
+
+.wp-heading {
+    width: 73%;
+    margin: auto;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wp-heading h1 {
+    padding: 5px 20px;
+    background-color: #B9FF66;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.wp-heading p {
+    padding: 8px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.wp-steps {
+    width: 70%;
+    margin: auto;
+}
+
+.wp-step {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
+
+.wp-step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #F4F4F4;
+}
+
+.wp-step.active .wp-step-header {
+    background-color: #B9FF66;
+}
+
+.wp-step-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.wp-step-title {
+    flex-grow: 1;
+    margin-left: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.wp-step-toggle {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.wp-step-content {
+    padding: 20px;
+    background-color: #B9FF66;
+    position: relative;
+}
+
+.wp-step-description {
+    line-height: 1.6;
+}
+
+.wp-step-divider {
+    /* bottom: 0;
+    left: 0;
+    right: 0; */
+    height: 2px;
+    background-color: #000000;
+}
+

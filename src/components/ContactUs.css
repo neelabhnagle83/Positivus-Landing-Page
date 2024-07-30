@@ -1,0 +1,97 @@
+#cu-container {
+    padding-top: 64px;
+    margin-bottom: 80px;
+}
+
+.cu-heading {
+    width: 73%;
+    margin: auto;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cu-heading h1 {
+    padding: 5px 20px;
+    background-color: #B9FF66;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.cu-heading p {
+    padding: 8px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 auto;
+    width: 70%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added for relative positioning */
+}
+
+.form-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-type {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    margin-bottom: 20px;
+}
+
+.form-type label {
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.form-type input {
+    margin-right: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;  /* Increased margin for padding between fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 90%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
+.image-container {
+    width: 22%;
+    height: 348px;
+    margin-right: -19px;
+}

@@ -1,0 +1,93 @@
+/* HeroSection.css */
+
+#hero-section {
+    width: 90%;
+    max-width: 1200px; /* Ensure it doesn’t stretch too wide */
+    margin: auto;
+    display: flex;
+    flex-direction: row; /* Align content horizontally by default */
+    justify-content: space-between; /* Distribute space between content and image */
+    align-items: center; /* Vertically center content */
+    padding: 48px 16px; /* Add padding to avoid content touching edges */
+    gap: 40px; /* Space between content */
+}
+
+.hs-content {
+    width: 45%; /* Adjust width for content on larger screens */
+    text-align: left; /* Align text to the left */
+}
+
+.hs-content h1 {
+    font-size: 4vw; /* Responsive font size based on viewport width */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hs-content p {
+    font-size: 1.5vw; /* Responsive font size based on viewport width */
+    margin-bottom: 20px;
+}
+
+.hs-button {
+    padding: 20px 35px; /* Adjust button size */
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.hs-img {
+    width: 50%; /* Adjust image width for larger screens */
+    height: auto;
+    max-width: 520px; /* Restrict maximum width */
+}
+
+/* Responsive Design for screens 768px or smaller */
+
+@media (max-width: 768px) {
+    #hero-section {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center content */
+    }
+
+    .hs-content {
+        width: 100%; /* Full width for content on smaller screens */
+        text-align: center; /* Center text */
+    }
+
+    .hs-img {
+        width: 100%; /* Full width for image on smaller screens */
+        max-width: 500px; /* Restrict maximum width */
+        margin-bottom: 20px; /* Space below image */
+    }
+
+    .hs-content h1 {
+        font-size: 6vw; /* Adjust font size based on viewport width for smaller screens */
+        margin-bottom: 20px; /* Space below heading */
+    }
+
+    .hs-content p {
+        font-size: 3vw; /* Adjust font size based on viewport width for smaller screens */
+        margin-bottom: 20px; /* Space below paragraph */
+    }
+
+    .hs-button {
+        padding: 12px 24px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .hs-content h1 {
+        font-size: 8vw; /* Further adjust font size for very small screens */
+    }
+
+    .hs-content p {
+        font-size: 4vw; /* Further adjust paragraph font size */
+    }
+
+    .hs-button {
+        padding: 10px 20px; /* Adjust button padding */
+    }
+}

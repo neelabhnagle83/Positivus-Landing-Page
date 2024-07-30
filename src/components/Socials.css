@@ -1,0 +1,36 @@
+#companies {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center;
+    width: auto;
+    padding: 20px;
+    gap: 64px; /* Reduced gap for better responsiveness */
+}
+
+#companies img {
+    height: 50px; /* Set a default size for the images */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure images don’t overflow their container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1285px) {
+    #companies img {
+        height: 40px; /* Smaller size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #companies img {
+        height: 30px; /* Smaller size for smaller screens */
+    }
+    #companies {
+        gap: 10px; /* Reduce gap on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #companies {
+        gap: 5px; /* Further reduce gap for very small screens */
+    }
+}
